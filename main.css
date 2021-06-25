@@ -1,0 +1,232 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*main*/
+#main {
+    background-image: url(img/back.jpg);
+    background-size: 100% 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+.nav-brand {
+    margin: .5rem;
+}
+
+.logo {
+    width: 170px;
+    height: 70px;
+}
+
+.nav-link ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-link li {
+    list-style: none;
+
+}
+
+.nav-link li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 1rem;
+    display: block;
+    font-size: 1rem;
+}
+
+.nav-link li:hover {
+    background-color: #555;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+@media (max-width: 1025px) {
+    .toggle-button {
+        display: flex;
+    }
+
+    .nav-link {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-link ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .nav-link li {
+        text-align: center;
+    }
+
+    .nav-link li a {
+        padding: .5rem 1rem;
+    }
+
+    .nav-link.active {
+        display: flex;
+    }
+}
+
+.title {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-title {
+    color: #fff;
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 0px;
+}
+
+.main-title-subline {
+    margin-top: 10px;
+    color: #fff;
+    font-size: 2rem;
+}
+
+/* about-us  */
+#about-us {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 1.5rem;
+    padding-bottom:10px ;
+}
+
+.about-contain {
+    padding: 0 20%;
+}
+
+/* priceing */
+#pricing {
+    padding: 0 100px;
+    text-align: center;
+    background-image: url(img/nick-iliasov-75tQQJvpym4-unsplash.jpg);
+    background-size: cover;
+}
+
+.pricing-head {
+    font-size: 2rem;
+    padding: 20px;
+    margin-bottom: 0;
+    color: #fff;
+}
+
+.price-text {
+    line-height: 1.5;
+    font-size: 1.8rem;
+}
+
+
+.price-con {
+    padding: 3% 2%;
+    color: #182330;
+}
+
+.card-img-top {
+    width: 200px;
+    height: 300px;
+}
+
+.card-body {
+    color: #182330;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.card-bo {
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .25);
+    transition: transform 200ms;
+}
+
+.card-bo:hover {
+    transform: scale(1.1);
+    box-shadow: 0 15px 80px rgba(0, 0, 0, .25);
+    border: 1px solid #182330;
+}
+
+/* corscell */
+#corscell{
+    width: 100%;
+    height: 990px;
+    text-align: center;
+    padding-top: 20px;
+}
+#corscell h1{
+    padding-bottom: 2%;
+}
+.c-img{
+    width: 200px;
+    height: 500px;
+}
+.map{
+    width: 100%;
+    height: 300px;
+}
+
+.contac-title{
+    padding-top: 2%;
+    font-size: 2rem;
+}
+
+/* contact-us */
+#contact-us{
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    background-image:url(img/nick-iliasov-75tQQJvpym4-unsplash.jpg) ;
+    background-size: cover;
+    color: #fff;
+    padding: 20px;
+}
+.icon{
+    color: #fff;
+    padding: 10px 10px;
+   
+}
+.copyright{
+    padding-top:20px ;
+}
